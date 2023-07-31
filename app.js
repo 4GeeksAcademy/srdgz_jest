@@ -23,6 +23,6 @@ const fromDollarToYen = function(valueInDollar) {
 
 const fromYenToPound = function(valueInYen) {
     let valueInPound = valueInYen * (oneEuroIs.GBP / oneEuroIs.JPY);
-    return Number(valueInPound.toFixed(3));
+    return valueInPound;
 }
-module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
+module.exports = { sum, oneEuroIs, fromEuroToDollar, fromDollarToYen, fromYenToPound };
